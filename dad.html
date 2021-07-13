@@ -1,0 +1,199 @@
+<html>
+    <head>
+          <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <style>
+            #button0{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:darkturquoise;
+            }
+
+            #button1{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:darkviolet;
+            }
+
+            #button2{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:deeppink;
+            }
+
+            #button3{
+                height: 200px;
+                width:320px;
+                padding:5px;;
+                background-color:darkred;
+            }
+
+            #button4{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:darkslateblue;
+            }
+
+            #button5{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:darkslategrey;
+            }
+
+            #button6{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:deepskyblue;
+            }
+
+            #button7{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:goldenrod;
+            }
+
+            #button8{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:indigo;
+            }
+
+            #button9{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:lightseagreen;
+            }
+
+            #button10{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:maroon;
+            }
+
+            #button11{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:rgb(40, 180, 99);
+            }
+
+            #button12{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:mediumvioletred;
+            }
+
+            #button13{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:orangered;
+            }
+
+            #button14{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:darkcyan;
+            }
+
+            #button15{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:firebrick;
+            }
+
+            #button16{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:palevioletred;
+            }
+
+            #button17{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:teal;
+            }
+
+            #button18{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:yellowgreen;
+            }
+
+            #button19{
+                height: 200px;
+                width:320px;
+                padding:5px;
+                background-color:olivedrab;
+            }
+
+
+           
+        </style>
+    </head>
+
+    <body>
+        
+
+        <div class="row">
+            <div class="col s3 m3">
+              <div class="card">
+                <div class="card-image" id="buttonContainer">
+                    <img src='2.jpg' id = 'button'>
+                  <span class="card-title"></span>
+                </div>
+                <div class="card-content" id="name">
+                </div>
+                <div class="card-action" id="button">
+                    <button class="btn waves-effect waves-light" type="submit" name="action" onclick = "changeColor()">Click
+                        <i class="material-icons right"></i>
+                      </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+         
+                  
+                  
+    </body>
+
+    <script>
+        
+        
+        
+        
+
+        function changeColor(){
+            var color = Math.floor((Math.random()*3)+0)
+            var nameList = ["Alan", "Audrey", "Elkin", "Enoch", "Evan", "Jamin", "Jeffery", "Jerome", "Julia", "Justin", "Rachael", "Samuel Z.", "Samuel W.", "William", "Zoelin", "Michael", "Dragon", "Rian", "Leon", "Ruth", "Claire"]
+            var realName = "";
+            var colorNum = color.toString();
+            var name = Math.floor((Math.random()*20)+0);
+            realName = nameList[name];
+            var div = "<img src='" + color + ".jpg' id = 'button'>"
+            document.getElementById("buttonContainer").innerHTML = div;
+            document.getElementById("name").innerHTML = realName
+            console.log(div);
+        }
+    </script>
+</html>
